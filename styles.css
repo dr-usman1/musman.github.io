@@ -75,20 +75,84 @@ nav .container {
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
-    padding: 8rem 0;
+    padding: 6rem 0 8rem 0;
     text-align: center;
 }
 
-.hero-title {
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image-container {
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-placeholder {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-badge:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-badge svg {
+    width: 18px;
+    height: 18px;
 }
 
 .btn {
@@ -210,6 +274,70 @@ section {
     color: var(--secondary-color);
 }
 
+/* Experience Section */
+.experience {
+    background-color: var(--bg-light);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    background: var(--primary-color);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--bg-light);
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+.timeline-content h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.timeline-meta {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
 /* Contact Section */
 .contact {
     text-align: center;
@@ -263,12 +391,31 @@ footer {
         gap: 1rem;
     }
 
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-placeholder {
+        font-size: 2.5rem;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-badge {
+        min-width: 200px;
+        justify-content: center;
     }
 
     .section-title {
@@ -297,5 +444,19 @@ footer {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timeline-marker {
+        left: -2rem;
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
     }
 }
