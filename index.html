@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Usman - Personal Website">
+    <meta name="author" content="Dr. Usman">
+    <title>Dr. Usman - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            border: 5px solid #667eea;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .title {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .introduction {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .introduction h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .introduction p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+                font-size: 45px;
+            }
+
+            .introduction {
+                text-align: left;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-picture">
+            MU
+        </div>
+        
+        <h1>Dr. Muhammad Usman</h1>
+        <p class="title">Professional Title | Field of Expertise</p>
+        
+        <div class="introduction">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my personal website! I am Dr. Muhammad Usman, a dedicated professional 
+                passionate about innovation, research, and making a positive impact in my field.
+            </p>
+            <p>
+                With years of experience in [Your Field], I have developed expertise in [Key Areas]. 
+                My work focuses on [Primary Focus Areas], and I am committed to [Your Mission/Goals].
+            </p>
+            <p>
+                I believe in continuous learning, collaboration, and leveraging technology to solve 
+                real-world problems. Through this platform, I aim to share my work, insights, and 
+                connect with fellow professionals and enthusiasts.
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/dr-usman1" target="_blank">GitHub</a>
+            <a href="mailto:contact@example.com">Email</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
